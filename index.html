@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <style>
+    .lang-content { display: none; }
+    .lang-en { display: block; }
+  </style>
+</head>
+<body>
+  <select id="languageSelector" onchange="switchLanguage()">
+    <option value="en" selected>English</option>
+    <option value="sr">Српски (Serbian)</option>
+  </select>
+
+  <div class="lang-content lang-en">
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: May 4. 2025</p>
+    <p>This Privacy Policy explains how we collect, use, and share your personal information when you use our mobile application (“App”).</p>
+
+    <h2>1. Information We Collect</h2>
+    <ul>
+      <li><strong>Authentication Data:</strong> We use Firebase Authentication (including Google Sign-In) to identify users. This includes name, email, and profile photo.</li>
+      <li><strong>Subscription Information:</strong> Payment is handled through Google Play or Apple App Store. We do not store credit card details.</li>
+      <li><strong>Camera & Photos:</strong> Access is used to analyze food images and return nutritional information. Images are not stored.</li>
+      <li><strong>Usage Data:</strong> We collect basic usage info to improve app performance.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>Authenticate and manage user accounts</li>
+      <li>Provide and improve app features</li>
+      <li>Process subscriptions</li>
+      <li>Return nutrition analysis</li>
+    </ul>
+
+    <h2>3. Data Sharing</h2>
+    <p>We do not sell your data. We only share it with services like Firebase, Apple, and Google where necessary to operate the app.</p>
+
+    <h2>4. Security</h2>
+    <p>We use secure infrastructure and reasonable protections to safeguard your data.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You may request deletion or updates of your data by emailing us at dbozicbusiness@gmail.com.</p>
+
+    <h2>6. Children</h2>
+    <p>This app is not for children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy. Changes will be posted in the app or on this page.</p>
+
+    <h2>8. Contact</h2>
+    <p>Email: dbozicbusiness@gmail.com</p>
+  </div>
+
+  <div class="lang-content lang-sr">
+    <h1>Политика приватности</h1>
+    <p>Датум ступања на снагу: Maj 4. 2025</p>
+    <p>Ова политика приватности објашњава како прикупљамо, користимо и делимо ваше личне податке када користите нашу мобилну апликацију („Апликација“).</p>
+
+    <h2>1. Подaци које прикупљамо</h2>
+    <ul>
+      <li><strong>Подаци за аутентификацију:</strong> Користимо Firebase аутентификацију (укључујући Google Sign-In). Ово укључује име, е-пошту и слику профила.</li>
+      <li><strong>Информације о претплати:</strong> Плаћања се обрађују преко Google Play-а или Apple App Store-а. Не чувамо податке о картицама.</li>
+      <li><strong>Камера и галерија:</strong> Користимо приступ да анализирамо слике хране. Слике се не чувају.</li>
+      <li><strong>Подаци о употреби:</strong> Прикупљамо основне податке ради побољшања апликације.</li>
+    </ul>
+
+    <h2>2. Како користимо ваше податке</h2>
+    <ul>
+      <li>Аутентификација и управљање налогом</li>
+      <li>Пружање и побољшање функција</li>
+      <li>Обрада претплата</li>
+      <li>Анализа хране и нутритивни подаци</li>
+    </ul>
+
+    <h2>3. Делитељност података</h2>
+    <p>Не продајемо ваше податке. Делимо их само са трећим странама као што су Firebase, Apple и Google ако је неопходно за функционисање апликације.</p>
+
+    <h2>4. Безбедност</h2>
+    <p>Користимо безбедну инфраструктуру и разумне мере заштите.</p>
+
+    <h2>5. Ваша права</h2>
+    <p>Можете затражити брисање или измену података слањем захтева на dbozicbusiness@gmail.com.</p>
+
+    <h2>6. Деца</h2>
+    <p>Апликација није намењена деци млађој од 13 година. Не прикупљамо свесно податке од деце.</p>
+
+    <h2>7. Промене</h2>
+    <p>Можемо ажурирати ову политику. Измене ће бити објављене у апликацији или на овој страници.</p>
+
+    <h2>8. Контакт</h2>
+    <p>Е-пошта: dbozicbusiness@gmail.com</p>
+  </div>
+
+  <script>
+    function switchLanguage() {
+      const selected = document.getElementById("languageSelector").value;
+      document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
+      document.querySelector('.lang-' + selected).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
